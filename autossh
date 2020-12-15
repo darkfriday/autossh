@@ -5,7 +5,7 @@
 # @category Main
 # @package  AutoSSH
 # @author   Feei <feei@feei.cn>
-# @editor	Darfriday <zaku.darkfriday@gmail.com>
+# @editor   Darkfriday <zaku.darkfriday@gmail.com>
 # @license  Copyright (C) 2015 Feei. All Rights Reserved
 # @link     http://github.com/FeeiCN/autossh
 # @install
@@ -81,7 +81,7 @@ else
 			TIMEWAIT=`echo $server | awk -F\| '{ print $7 }'`
 			FILE='/tmp/.login.sh'
 			if [ "$PORT" == "" ]; then
-				PORT=10022
+				PORT=2266
 			fi
 	        	echo '#!/usr/bin/expect -f' > $FILE
 	        	echo 'set timeout '$TIMEWAIT >> $FILE
